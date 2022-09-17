@@ -1,0 +1,106 @@
+[
+    {
+       "tasks.profile.name":"ExpenseTracker - Do Request",
+       "tasks.profile.date":"20220917T153622",
+       "tasks.profile.length":8,
+       "tasks.profile.size":364,
+       "tasks.profile.data":[
+          {
+             "tasks.profile.fields":{
+                "field1":"{VAR_EXPENSEAMOUNT}",
+                "field3":"0",
+                "field2":"empty"
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"930",
+                "itemTask":"{VAR_EXPENSEAMOUNT}|empty|0",
+                "itemDescription":"If values are equals\n{VAR_EXPENSEAMOUNT}\nempty\nDo NOT perform the tasks below"
+             }
+          },
+          {
+             "tasks.profile.fields":{
+                "field1":"{VAR_EXPENSECATEGORY}",
+                "field3":"0",
+                "field2":"empty"
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"930",
+                "itemTask":"{VAR_EXPENSECATEGORY}|empty|0",
+                "itemDescription":"If values are equals\n{VAR_EXPENSECATEGORY}\nempty\nDo NOT perform the tasks below"
+             }
+          },
+          {
+             "tasks.profile.fields":{
+                "field1":"{VAR_EXPENSEENDPOINT}",
+                "field3":"action=addItem;device={DEVICE};secret={VAR_SECRET};category={VAR_EXPENSECATEGORY};amount={VAR_EXPENSEAMOUNT};",
+                "field2":"EXPENSERESULT"
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"111",
+                "itemTask":"{VAR_EXPENSEENDPOINT}|EXPENSERESULT|action=addItem;device={DEVICE};secret={VAR_SECRET};category={VAR_EXPENSECATEGORY};amount={VAR_EXPENSEAMOUNT};",
+                "itemDescription":"Request: {VAR_EXPENSEENDPOINT}\nVariable: {VAR_EXPENSERESULT}\nPOST parameters :\nName: action \/ Value: addItem\nName: device \/ Value: {DEVICE}\nName: secret \/ Value: {VAR_SECRET}\nName: category \/ Value: {VAR_EXPENSECATEGORY}\nName: amount \/ Value: {VAR_EXPENSEAMOUNT}"
+             }
+          },
+          {
+             "tasks.profile.fields":{
+                "field1":"ExpenseTracker",
+                "field2":"Request send"
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"89",
+                "itemTask":"[ExpenseTracker]Request send",
+                "itemDescription":"ExpenseTracker\nRequest send"
+             }
+          },
+          {
+             "tasks.profile.fields":{
+                "field1":"4"
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"819",
+                "itemTask":"5",
+                "itemDescription":"5 seconds"
+             }
+          },
+          {
+             "tasks.profile.fields":{
+                "field1":"ExpenseTracker",
+                "field2":"{VAR_EXPENSERESULT}"
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"89",
+                "itemTask":"[ExpenseTracker]{VAR_EXPENSERESULT}",
+                "itemDescription":"ExpenseTracker\n{VAR_EXPENSERESULT}"
+             }
+          },
+          {
+             "tasks.profile.fields":{
+                "field1":"1"
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"90",
+                "itemTask":"1",
+                "itemDescription":"Close your conditional block"
+             }
+          },
+          {
+             "tasks.profile.fields":{
+                "field1":"1"
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"90",
+                "itemTask":"1",
+                "itemDescription":"Close your conditional block"
+             }
+          }
+       ]
+    }
+ ]

@@ -1,0 +1,83 @@
+[
+    {
+       "tasks.profile.name":"ExpenseTracker v1.1",
+       "tasks.profile.date":"20220917T163129",
+       "tasks.profile.length":6,
+       "tasks.profile.size":483,
+       "tasks.profile.data":[
+          {
+             "tasks.profile.fields":{
+                "field1":"EXPENSERESULT",
+                "field2":"empty"
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"837",
+                "itemTask":"[{VAR_EXPENSERESULT}]empty",
+                "itemDescription":"EXPENSERESULT\nempty"
+             }
+          },
+          {
+             "tasks.profile.fields":{
+                "field1":"EXPENSEAMOUNT",
+                "field2":"empty"
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"837",
+                "itemTask":"[{VAR_EXPENSEAMOUNT}]empty",
+                "itemDescription":"EXPENSEAMOUNT\nempty"
+             }
+          },
+          {
+             "tasks.profile.fields":{
+                "field1":"EXPENSECATEGORY",
+                "field2":"empty"
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"837",
+                "itemTask":"[{VAR_EXPENSECATEGORY}]empty",
+                "itemDescription":"EXPENSECATEGORY\nempty"
+             }
+          },
+          {
+             "tasks.profile.fields":{
+                "field1":"ExpenseTracker - Amount",
+                "field3":"EXPENSEAMOUNT",
+                "field2":"Add you paid amount "
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"841",
+                "itemTask":"ExpenseTracker - Amount|Add you paid amount |EXPENSEAMOUNT",
+                "itemDescription":"Title : ExpenseTracker - Amount\nMessage : Add you paid amount \nVariable name : EXPENSEAMOUNT"
+             }
+          },
+          {
+             "tasks.profile.fields":{
+                "field1":"Select an expense category for: {VAR_EXPENSEAMOUNT}€",
+                "field3":"Food=Food;Food ToGo=Food ToGo;Drinks=Drinks;Coffee=Coffee;Debts=Debts;Bakery=Bakery;Unknown=Unknown;Kleinanzeigen=Kleinanzeigen;Kaffee IPA=Kaffee IPA;Lunch=Lunch;",
+                "field2":"EXPENSECATEGORY"
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"846",
+                "itemTask":"Select an expense category for: {VAR_EXPENSEAMOUNT}€|EXPENSECATEGORY|Food=Food;Food ToGo=Food ToGo;Drinks=Drinks;Coffee=Coffee;Debts=Debts;Bakery=Bakery;Unknown=Unknown;Kleinanzeigen=Kleinanzeigen;Kaffee IPA=Kaffee IPA;Lunch=Lunch;",
+                "itemDescription":"Question: Select an expense category for: {VAR_EXPENSEAMOUNT}€\nVariable: {VAR_EXPENSECATEGORY}\nAnswers :\nText: Food \/ Value: Food\nText: Food ToGo \/ Value: Food ToGo\nText: Drinks \/ Value: Drinks\nText: Coffee \/ Value: Coffee\nText: Debts \/ Value: Debts\nText: Bakery \/ Value: Bakery\nText: Unknown \/ Value: Unknown\nText: Kleinanzeigen \/ Value: Kleinanzeigen\nText: Kaffee IPA \/ Value: Kaffee IPA\nText: Lunch \/ Value: Lunch"
+             }
+          },
+          {
+             "tasks.profile.fields":{
+                "field1":"ExpenseTracker - Do Request"
+             },
+             "tasks.profile.config":{
+                "itemTaskExtra":"",
+                "requestType":"839",
+                "itemTask":"ExpenseTracker - Do Request",
+                "itemDescription":"ExpenseTracker - Do Request"
+             }
+          }
+       ]
+    }
+ ]
